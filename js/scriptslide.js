@@ -3,10 +3,10 @@
 var page_title = 'ScriptSlide';
 
 var background_image = 'media/bg.png';
-var header_logo = 'media/my-logo.png';
+var header_logo = 'media/logo.png';
 var bullet_point_image = 'media/dash.png';
 
-var header_background = '#00BFFF';
+var header_background = '#444444';
 var author_info_color = 'white';
 
 var menu_rollover_background = '#00BFFF';
@@ -14,7 +14,7 @@ var menu_rollover_title_color = '#444444';
 var menu_rollover_foreground = 'white';
 var menu_rollover_foreground_mouseover = '#222';
 
-var progress_bar_color = '#444444';
+var progress_bar_color = '#00BFFF';
 var progress_text_color = '#444444';
 
 
