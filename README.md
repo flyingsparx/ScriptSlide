@@ -8,9 +8,15 @@ The aim is to provide a lightweight, but easily-configurable, and visually compe
 [See how it works!](http://www.willwebberley.net/downloads/scriptslide)
 
 **IMPORTANT FILES:**
+* *js/scriptslide.js*
+    * The main ScriptSlide script.
+    * You won't usually need to edit this, but include this in your presentation HTML file.
+    * Relies on JQuery and a couple of its plugins. Include these before ScriptSlide.js (as shown in presentation.html).
+
 * *js/config.js*
     * This is the configuration file. 
     * Edit this to change the slideshow structure, transitions, logos, colour-schemes, etc.
+    * Include this script **before** ScriptSlide.js in your presentation HTML file.
 
 * *presentation.html*
     * This is where the presentation content goes.
