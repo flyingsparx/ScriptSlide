@@ -126,7 +126,6 @@ section{
 	min-height:500px;
 	padding:20px 15px;
 	position:absolute;
-	top:-1000px;
 	left:0px;
 	width:100%;
 }
@@ -141,22 +140,16 @@ section .main-image{
 	bottom:0px;
 }
 
-section .list-image{
-	vertical-align:top;
-}
-
-section .big-image{
-	max-height:500px;
-	position;relative;
-	margin:0px auto;
-}
-
 section img{
 	max-height:500px;
 	max-width:700px;
 	display:bloxk;
 	margin:0px auto;
 }
+
+/*
+* PROGRESS BAR LAYOUT
+*/
 
 #progress{
 	height:3px;
