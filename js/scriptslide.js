@@ -58,8 +58,8 @@ function updateProgressBar(progress){
 	var valueLeftNess = progress-3;
 	
 	// Do animations:
-	$("#progress").animate({width: progress+'%'},800, "easeOutBounce", function(){});
-	$("#progress-value").animate({left: valueLeftNess+'%'},400, "easeOutQuint", function(){});
+	$("#progress").stop().animate({width: progress+'%'},800, "easeOutBounce", function(){});
+	$("#progress-value").stop().animate({left: valueLeftNess+'%'},400, "easeOutQuint", function(){});
 	// Set value of label (rounded to integer % value):
 	$("#progress-value").html(Math.round(progress) + "%");
 }
@@ -102,16 +102,16 @@ function activateListeners(){
 		changeSlide($(id));
 	});
 	$("footer").mouseenter(function(){
-		$("footer").animate({'background-color': menu_rollover_background},700);
-		$("footer nav a").animate({'color': menu_rollover_foreground}, 700);
+		$("footer").stop().animate({'background-color': menu_rollover_background},700);
+		$("footer nav a").stop().animate({'color': menu_rollover_foreground}, 700);
 		
-		$("footer h3").animate({'color': menu_rollover_title_color}, 700);
+		$("footer h3").stop().animate({'color': menu_rollover_title_color}, 700);
 		$("footer nav").show(300, function(){});
 	});
 	$("footer").mouseleave(function(){
-		$("footer").animate({'background-color': 'rgba(250, 250, 250, 0.3);'},700);
-		$("footer h3").animate({'color': '#444444'}, 700);
-		$("footer nav").hide(300, function(){});
+		$("footer").stop().animate({'background-color': 'rgba(250, 250, 250, 0.3);'},700);
+		$("footer h3").stop().animate({'color': '#444444'}, 700);
+		$("footer nav").stop().hide(300, function(){});
 	});
 }
 
